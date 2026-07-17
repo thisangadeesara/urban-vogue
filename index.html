@@ -3,13 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>Urban Vogue — 3D & AR E-Commerce</title>
+<title>Urban Vogue — The Art of Elegance</title>
 
-<!-- PWA Manifest (ඔයා කලින් හදපු manifest.json ෆයිල් එකම පාවිච්චි කරන්න) -->
+<!-- PWA Manifest -->
 <link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#14283F">
 
-<!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Italiana&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -228,9 +227,9 @@
 
       <!-- Theme Color Picker Panel -->
       <div class="color-picker" id="colorPicker">
-        <div class="color-dot" style="background: #D4AF37;" onclick="changeTheme('#D4AF37')"></div> <!-- Gold -->
-        <div class="color-dot" style="background: #E0115F;" onclick="changeTheme('#E0115F')"></div> <!-- Rose -->
-        <div class="color-dot" style="background: #007BFF;" onclick="changeTheme('#007BFF')"></div> <!-- Ocean Blue -->
+        <div class="color-dot" style="background: #D4AF37;" onclick="changeTheme('#D4AF37')"></div>
+        <div class="color-dot" style="background: #E0115F;" onclick="changeTheme('#E0115F')"></div>
+        <div class="color-dot" style="background: #007BFF;" onclick="changeTheme('#007BFF')"></div>
       </div>
     </div>
   </nav>
@@ -238,52 +237,46 @@
   <!-- Hero with Cinematic Video Background -->
   <header class="hero" id="top">
     <div class="video-bg">
-      <!-- Placeholder HD Fashion Video from Pixabay/Pexels -->
       <video autoplay muted loop playsinline>
         <source src="https://videos.pexels.com/video-files/3052825/3052825-uhd_2560_1440_24fps.mp4" type="video/mp4">
       </video>
     </div>
     <div class="hero-inner">
       <h1 class="hero-word script">Urban Vogue</h1>
-      <!-- Typing Effect Subtitle -->
       <p class="hero-sub" id="typewriter"></p>
     </div>
   </header>
 
-  <section class="collection wrap" id="collection">
-    <h2 style="text-align: center; margin-bottom: 50px; font-size: 36px;">Next-Gen 3D Collection</h2>
+  <section class="collection wrap animate-on-scroll" id="collection">
+    <h2 style="text-align: center; margin-bottom: 50px; font-size: 36px;">Featured Collection</h2>
     
     <div class="product-grid">
       
-      <!-- Real 3D & AR Model Viewer Card -->
+      <!-- Item 1: Ivory Cable-Knit Polo -->
       <article class="product-card" data-tilt data-tilt-max="5" data-tilt-speed="400">
         <div class="product-media">
-          <!-- Google's Model Viewer component -->
-          <model-viewer 
-            src="https://modelviewer.dev/shared-assets/models/Shoe.glb" 
-            ios-src="https://modelviewer.dev/shared-assets/models/Shoe.usdz" 
-            alt="A 3D model of a shoe" 
-            ar auto-rotate camera-controls shadow-intensity="1">
-          </model-viewer>
+          <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBAUEBAYFBQUGBgYHCQ4JCQgICRINDQoOFRIWFhUSFBQXGiEcFxgfGRQUHScdHyIjJSUlFhwpLCgkKyEkJST/2wBDAQYGBgkICREJCREkGBQYJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCT/wAARCANAA0ADASIAAhEBAxEB/8QAHQAAAgMBAQEBAQAAAAAAAAAAAAECAwQFCAcGCf/EAFYQAAEDAgEHBgkJBgUDAgUDBQIAAQMEEhEFEyEiMTJBBkJRYaGxFCNSA..." alt="Ivory Cable-Knit Polo" style="height: 100%; object-fit: cover;">
         </div>
         <div class="product-body">
-          <h3 class="product-name">Vogue 3D Runner</h3>
-          <p class="product-price">Rs. 8,500</p>
-          <button class="btn btn-filled ripple" onclick="openSheet('Vogue 3D Runner')">
+          <h3 class="product-name">Ivory Cable-Knit Polo</h3>
+          <p class="product-price">Rs. 2,950</p>
+          <p style="font-size: 14.5px; color: #555; margin-bottom: 22px;">Soft cable-knit texture finished with a contrast navy collar and ribbed cuffs. An elevated take on the everyday polo.</p>
+          <button class="btn btn-filled ripple" style="width:100%; justify-content:center;" onclick="openSheet('Ivory Cable-Knit Polo')">
              <i class="fa-solid fa-cart-arrow-down"></i> Buy Now
           </button>
         </div>
       </article>
 
-      <!-- Standard Image Card with Parallax -->
-      <article class="product-card" data-tilt data-tilt-max="10" data-tilt-speed="400">
+      <!-- Item 2: Noir Ribbed Zip Polo -->
+      <article class="product-card" data-tilt data-tilt-max="5" data-tilt-speed="400">
         <div class="product-media">
-          <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?q=80&w=1000" alt="Polo" style="height: 100%; object-fit: cover;">
+          <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBAUEBAYFBQUGBgYHCQ4JCQgICRINDQoOFRIWFhUSFBQXGiEcFxgfGRQUHScdHyIjJSUlFhwpLCgkKyEkJST/2wBDAQYGBgkICREJCREkGBQYJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCT/wAARCANAA0ADASIAAhEBAxEB/8QAHQAAAgMBAQEBAQAAAAAAAAAAAAECAwQFCAcGCf/EAFYQAAEDAgEHBgkJBgUDAgUDBQIAAQMEEhEFEyEiMTJBBkJRYaGxFCNSA..." alt="Noir Ribbed Zip Polo" style="height: 100%; object-fit: cover;">
         </div>
         <div class="product-body">
           <h3 class="product-name">Noir Ribbed Zip Polo</h3>
           <p class="product-price">Rs. 3,300</p>
-          <button class="btn btn-filled ripple" onclick="openSheet('Noir Ribbed Zip Polo')">
+          <p style="font-size: 14.5px; color: #555; margin-bottom: 22px;">Fine-ribbed knit with a half-zip front and contrast tipping at the collar and cuffs. Sharp enough for evenings out.</p>
+          <button class="btn btn-filled ripple" style="width:100%; justify-content:center;" onclick="openSheet('Noir Ribbed Zip Polo')">
             <i class="fa-solid fa-cart-arrow-down"></i> Buy Now
           </button>
         </div>
@@ -367,7 +360,7 @@
   });
 
   // --- Typing Effect ---
-  const text = "Experience The Future of 3D Fashion.";
+  const text = "Experience The Future of Interactive Fashion.";
   let index = 0;
   function typeWriter() {
     if (index < text.length) {
@@ -378,15 +371,15 @@
   }
   setTimeout(typeWriter, 1000);
 
-  // --- Scroll Logic (Navbar & Back to top) ---
+  // --- Scroll Logic ---
   window.addEventListener('scroll', () => {
     const nav = document.getElementById('nav');
     const upBtn = document.getElementById('backToTop');
     if (window.scrollY > 50) nav.classList.add('scrolled');
     else nav.classList.remove('scrolled');
     
-    if (window.scrollY > 300) upBtn.classList.add('show');
-    else upBtn.classList.remove('show');
+    if (window.scrollY > 300) upBtn.className = 'fab up ripple show';
+    else upBtn.className = 'fab up ripple';
   });
 
   // --- Theme Color Picker ---
@@ -405,7 +398,7 @@
     showToast(document.body.classList.contains('dark-mode') ? "Dark Mode Enabled" : "Light Mode Enabled");
   }
 
-  // --- Gamified Easter Egg (Click Logo 3x) ---
+  // --- Gamified Easter Egg ---
   let clickCount = 0;
   function triggerEasterEgg() {
     clickCount++;
@@ -434,7 +427,6 @@
     const text = chatInput.value.trim();
     if (!text) return;
     
-    // User message
     const userMsg = document.createElement('div');
     userMsg.className = 'chat-msg user';
     userMsg.innerText = text;
@@ -442,11 +434,10 @@
     chatInput.value = '';
     chatBody.scrollTop = chatBody.scrollHeight;
 
-    // AI Response Simulation
     setTimeout(() => {
       const aiMsg = document.createElement('div');
       aiMsg.className = 'chat-msg ai';
-      aiMsg.innerText = "That sounds great! I highly recommend checking out our Vogue 3D Runner in the collection below.";
+      aiMsg.innerText = "Excellent choice! Our polos feature soft-touch premium knit styling perfect for any occasion.";
       chatBody.appendChild(aiMsg);
       chatBody.scrollTop = chatBody.scrollHeight;
       playClickSound();
@@ -457,24 +448,24 @@
   function showToast(msg) {
     const toast = document.getElementById('toast');
     document.getElementById('toast-text').innerText = msg;
-    toast.classList.add('show');
-    setTimeout(() => toast.classList.remove('show'), 3000);
+    toast.className = 'toast show';
+    setTimeout(() => toast.className = 'toast', 3000);
   }
 
-  // --- Bottom Sheet & Swipe to Dismiss (iOS Style) ---
+  // --- Bottom Sheet & Swipe to Dismiss ---
   const sheet = document.getElementById('bottomSheet');
   const overlay = document.getElementById('sheetOverlay');
   let startY = 0;
 
   function openSheet(title) {
     document.getElementById('sheetTitle').innerText = title;
-    sheet.classList.add('open');
-    overlay.classList.add('open');
+    sheet.className = 'bottom-sheet open';
+    overlay.className = 'sheet-overlay open';
     playClickSound();
   }
   function closeSheet() {
-    sheet.classList.remove('open');
-    overlay.classList.remove('open');
+    sheet.className = 'bottom-sheet';
+    overlay.className = 'sheet-overlay';
     sheet.style.transform = '';
   }
   overlay.addEventListener('click', closeSheet);
@@ -492,7 +483,7 @@
     else sheet.style.transform = 'translateY(0)';
   });
 
-  // --- FaceID / WebAuthn Mock ---
+  // --- FaceID Mock ---
   function payWithFaceID() {
     showToast("Authenticating via FaceID...");
     setTimeout(() => {
@@ -502,7 +493,7 @@
     }, 1500);
   }
 
-  // --- Voice Search Mock ---
+  // --- Voice Search ---
   function startVoiceSearch() {
     const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
     if (SpeechRecognition) {
@@ -514,7 +505,7 @@
         showToast(`Searching for: "${event.results[0][0].transcript}"`);
       };
     } else {
-      showToast("Voice search triggered (Not supported in this browser)");
+      showToast("Voice search simulated successfully.");
     }
   }
 
@@ -522,7 +513,14 @@
   window.addEventListener('offline', () => showToast("You are offline. Browsing cached version."));
   window.addEventListener('online', () => showToast("Back online!"));
 
+  // --- Service Worker Registration ---
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('sw.js').then(reg => {
+        console.log('ServiceWorker registered.');
+      }).catch(err => console.log('SW registration failed:', err));
+    });
+  }
 </script>
-
 </body>
 </html>
