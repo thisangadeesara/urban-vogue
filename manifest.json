@@ -1,0 +1,16 @@
+{
+  "name": "Urban Vogue",
+  "short_name": "Vogue",
+  "description": "The Art of Elegance in your pocket",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#14283F",
+  "theme_color": "#14283F",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/3081/3081559.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
